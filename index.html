@@ -3,11 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Confirmed</title>
+  <title>Email Confirmed - PlaygroundsApp</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out 0.3s;
+      animation-fill-mode: backwards;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #6e8efb;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeIn 1s ease-in-out 0.6s;
+      animation-fill-mode: backwards;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Email Confirmed!</h1>
-  <p>Thank you for verifying your email. Please return to the app to continue.</p>
-  <p><a href="YOUR_APP_STORE_LINK">Download the app</a> if you haven’t already.</p>
+  <div class="container">
+    <h1>Email Confirmed! 🎉</h1>
+    <p>Thank you for verifying your email. Let’s get back to the fun in Playgrounds!</p>
+    <a id="redirectBtn" href="#" class="btn">Open Playgrounds</a>
+  </div>
+
+  <script>
+    // Securely handle the access token and redirect
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("access_token");
+
+    const redirectBtn = document.getElementById("redirectBtn");
+
+    if (token) {
+      // Set the deep link with the token (replace 'playgroundsapp' with your app's scheme)
+      const deepLink = `playgroundsapp://confirm?access_token=${encodeURIComponent(token)}`;
+      redirectBtn.href = deepLink;
+
+      // Attempt to redirect immediately
+      window.location.href = deepLink;
+    } else {
+      // Fallback if no token is present
+      redirectBtn.href = "YOUR_APP_STORE_LINK"; // Replace with your app store link
+      redirectBtn.textContent = "Download Playgrounds";
+    }
+  </script>
 </body>
 </html>
