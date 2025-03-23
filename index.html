@@ -1,122 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Confirmed - PlaygroundsApp</title>
-  <style>
-    /* Reset and base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #6e8efb, #a777e3);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      padding: 40px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      max-width: 500px;
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      animation: fadeIn 1s ease-in-out 0.3s;
-      animation-fill-mode: backwards;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      background: #fff;
-      color: #6e8efb;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 25px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      animation: fadeIn 1s ease-in-out 0.6s;
-      animation-fill-mode: backwards;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Fade-in animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Responsive design */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1em;
-      }
-      .container {
-        padding: 20px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playgrounds - Discover. Connect. Play.</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Email Confirmed! 🎉</h1>
-    <p>Thank you for verifying your email. Let’s get back to the fun in Playgrounds!</p>
-    <a id="redirectBtn" href="#" class="btn">Open Playgrounds</a>
-  </div>
+  <header>
+    <nav>
+      <div class="logo">Playgrounds</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script>
-    // Securely handle the access token and redirect
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get("access_token");
+  <section class="hero">
+    <h1>Discover. Connect. Play.</h1>
+    <p>Your gateway to meet, play, and explore local events and activities.</p>
+    <a href="#download" class="cta-button">Download Now</a>
+  </section>
 
-    const redirectBtn = document.getElementById("redirectBtn");
+  <section id="features">
+    <h2>Why Choose Playgrounds?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>📍 Find Local Events</h3>
+        <p>Discover nearby events, activities, and meet-ups instantly.</p>
+      </div>
+      <div class="feature">
+        <h3>👥 Connect with Friends</h3>
+        <p>Invite your friends and join activities together.</p>
+      </div>
+      <div class="feature">
+        <h3>🌟 Personalized Recommendations</h3>
+        <p>Get tailored event suggestions based on your interests.</p>
+      </div>
+    </div>
+  </section>
 
-    if (token) {
-      // Set the deep link with the token (replace 'playgroundsapp' with your app's scheme)
-      const deepLink = `playgroundsapp://confirm?access_token=${encodeURIComponent(token)}`;
-      redirectBtn.href = deepLink;
+  <section id="about">
+    <h2>About Playgrounds</h2>
+    <p>Playgrounds is designed to bring people together by making it easier to find local experiences. Whether you’re into sports, social events, or community gatherings, we’ve got something for everyone.</p>
+  </section>
 
-      // Attempt to redirect immediately
-      window.location.href = deepLink;
-    } else {
-      // Fallback if no token is present
-      redirectBtn.href = "YOUR_APP_STORE_LINK"; // Replace with your app store link
-      redirectBtn.textContent = "Download Playgrounds";
-    }
-  </script>
+  <section id="download">
+    <h2>Download Playgrounds Today</h2>
+    <a href="#" class="download-btn">Download on the App Store</a>
+    <a href="#" class="download-btn">Get it on Google Play</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fluxe Labs. All rights reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
 </body>
 </html>
