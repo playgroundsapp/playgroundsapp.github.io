@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Playgrounds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 900px;
+            line-height: 1.7;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #1a1a1a;
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 1em;
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p><em>Effective Date: March 23, 2025</em></p>
+    <p><em>Last Updated: March 23, 2025</em></p>
+
+    <p>Welcome to Playgrounds! This Privacy Policy governs your use of the Playgrounds mobile application ("App"), a map-based social network developed by Fluxe Labs, based in Toronto, Canada. The App is available in the United States, Canada, and all countries where the Google Play Store and Apple App Store operate, except where restricted by those platforms. We are committed to transparency and security, but your responsibility in providing accurate information and securing your account is critical. Read this policy carefully.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect only the data necessary to operate Playgrounds:</p>
+    <ul>
+        <li><strong>Email Address:</strong> Provided by you during account creation for identification and communication. You cannot change your email within the App after signup—ensure its accuracy at registration.</li>
+        <li><strong>Post Location Data:</strong> The geographic location you attach to posts, collected only with your explicit consent before using the App. This is used solely to display your posts on the map and may be visible to other users as part of the App’s core functionality. We do not collect or track your live location.</li>
+        <li><strong>Usage Data:</strong> Automatically collected data on how you use the App (e.g., features accessed, session duration) to improve performance and user experience.</li>
+        <li><strong>Device Information:</strong> Basic technical details (e.g., device type, operating system version, unique device identifiers) for compatibility and troubleshooting.</li>
+    </ul>
+    <p>We do not collect payment information or any sensitive personal data beyond what is listed here unless explicitly stated in future updates.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your data exclusively for:</p>
+    <ul>
+        <li>Authenticating your account and enabling App features, including displaying your post locations on the map.</li>
+        <li>Sending essential account-related notifications (e.g., security alerts).</li>
+        <li>Analyzing anonymized usage trends to optimize the App.</li>
+    </ul>
+    <p>We do not use your information for marketing, advertising, or any purpose not explicitly stated here.</p>
+
+    <h2>3. Data Sharing and Disclosure</h2>
+    <p>We do not sell, rent, or trade your personal information. Data is shared only when:</p>
+    <ul>
+        <li><strong>Service Providers:</strong> Trusted third parties, such as Supabase (our secure database provider), process data on our behalf under strict confidentiality agreements, solely for the purposes in Section 2.</li>
+        <li><strong>Legal Obligations:</strong> Required by applicable law, court order, or government authority (e.g., under Canadian or international law), with notice to you unless legally prohibited.</li>
+    </ul>
+    <p>All third parties are bound by contract to protect your data and may not use it beyond our explicit instructions.</p>
+
+    <h2>4. Your Responsibilities and Limited Choices</h2>
+    <p>You are responsible for:</p>
+    <ul>
+        <li><strong>Accurate Email Submission:</strong> Your email is permanent and cannot be changed in the App. Verify its accuracy before signup, as errors cannot be corrected via the App interface.</li>
+        <li><strong>Post Location Consent:</strong> You agree to provide post location data for map display, understanding it may be visible to other users. This consent is required to use the App and is confirmed before your first use.</li>
+        <li><strong>Account Security:</strong> Protecting your login credentials. We are not liable for unauthorized access due to your negligence (e.g., sharing passwords).</li>
+        <li><strong>Deletion Option:</strong> You may delete your account at any time via the Account settings, erasing all associated data we hold, subject to Section 5.</li>
+    </ul>
+    <p>To request an email correction due to error or obsolescence, contact us at <a href="mailto:playgroundshello@gmail.com">playgroundshello@gmail.com</a>. We will process verified requests within 30 days, but we may deny changes if they compromise account integrity or security.</p>
+
+    <h2>5. Data Retention</h2>
+    <p>We retain your data only while your account is active:</p>
+    <ul>
+        <li>Your email and post location data are stored in a secure Supabase database until account deletion.</li>
+        <li>Upon deletion, all personal data is permanently erased within 30 days, except where retention is required by law (e.g., for audit purposes).</li>
+        <li>Anonymized usage data may be kept indefinitely for statistical analysis but cannot be linked to you.</li>
+    </ul>
+
+    <h2>6. Security Measures</h2>
+    <p>We use industry-standard safeguards, including encryption and secure storage via Supabase, to protect your data from unauthorized access, loss, or alteration. However:</p>
+    <ul>
+        <li>No system is fully immune to breaches. We are not liable for incidents beyond our reasonable control (e.g., if your device is compromised).</li>
+        <li>You must use a strong, unique password and secure your device to minimize risks.</li>
+    </ul>
+
+    <h2>7. Children’s Privacy</h2>
+    <p>Playgrounds is not designed for users under 13 years of age, per the Canadian Personal Information Protection and Electronic Documents Act (PIPEDA) and U.S. Children’s Online Privacy Protection Act (COPPA). We do not knowingly collect data from children. If you suspect a child under 13 has provided data, contact us at <a href="mailto:playgroundshello@gmail.com">playgroundshello@gmail.com</a>, and we will delete it immediately.</p>
+
+    <h2>8. International Data Transfers</h2>
+    <p>Your data may be processed outside Canada (e.g., via Supabase servers in the U.S. or other regions). By using the App, you consent to this transfer, acknowledging that privacy laws may differ. We ensure compliance with PIPEDA and applicable international standards, such as GDPR where relevant, through contractual safeguards with our providers.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy at our sole discretion. Changes are effective upon posting here. Your continued use of the App after updates signifies acceptance of the revised terms. Check this page regularly.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>For questions, complaints, or requests (e.g., email correction), email us at <a href="mailto:playgroundshello@gmail.com">playgroundshello@gmail.com</a>. Provide sufficient details to verify your identity. We respond within 30 days, per PIPEDA requirements.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>This policy and your use of the App are governed by the laws of Ontario, Canada, excluding its conflict-of-law principles. Any disputes arising from this policy or the App are subject to the exclusive jurisdiction of Ontario courts.</p>
+
+    <footer>
+        <p>© 2025 Fluxe Labs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
