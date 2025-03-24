@@ -26,16 +26,6 @@
             color: #000000;
             text-transform: lowercase;
         }
-        .icons {
-            display: flex;
-            gap: 15px;
-        }
-        .icon {
-            width: 24px;
-            height: 24px;
-            background-color: #000000; /* Placeholder for search/profile icons */
-            border-radius: 50%;
-        }
 
         /* Hero Section */
         .hero {
@@ -59,23 +49,6 @@
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .sidebar-icon {
-            width: 30px;
-            height: 30px;
-            background-color: #FFFFFF; /* Placeholder for compass/plus/minus icons */
-            border-radius: 50%;
         }
 
         /* Events Section */
@@ -112,12 +85,21 @@
             background-color: #FFFFFF;
             padding: 10px 20px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
             position: fixed;
             bottom: 0;
             width: 100%;
+            color: #000000;
+        }
+        .footer a {
+            color: #00C4B4;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -125,24 +107,13 @@
     <!-- Header -->
     <div class="header">
         <div class="logo">playgrounds</div>
-        <div class="icons">
-            <div class="icon"></div> <!-- Search Icon -->
-            <div class="icon"></div> <!-- Profile Icon -->
-        </div>
     </div>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1 class="heading">Discover Events Near You</h1>
+        <h1 class="heading">Never stop exploring</h1>
         <p class="subheading">Find festivals, sports, and parties happening now</p>
         <a href="#" class="cta-button">Get Started</a>
-    </div>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="sidebar-icon"></div> <!-- Compass Icon -->
-        <div class="sidebar-icon"></div> <!-- Plus Icon -->
-        <div class="sidebar-icon"></div> <!-- Minus Icon -->
     </div>
 
     <!-- Events Section -->
@@ -166,9 +137,10 @@
 
     <!-- Footer -->
     <div class="footer">
-        <div class="icon"></div> <!-- Profile Icon -->
-        <div class="icon"></div> <!-- Plus Icon -->
-        <div class="icon"></div> <!-- Search Icon -->
+        <span> © 2025 Fluxe Labs. All rights reserved. | </span>
+        <a href="/privacypolicy">Privacy Policy</a>
+        <span> | </span>
+        <a href="/terms">Terms</a>
     </div>
 </body>
 </html>
